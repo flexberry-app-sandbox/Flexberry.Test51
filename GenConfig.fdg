@@ -59,7 +59,7 @@
       },
       "Oracle": {
         "DiffSql": false,
-        "FullSql": true,
+        "FullSql": false,
         "ConnectionString": null
       },
       "Access": {
