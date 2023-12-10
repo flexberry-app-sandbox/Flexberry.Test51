@@ -32,15 +32,6 @@
       "defaultValue": "",
       "stored": true,
       "ordered": false
-    },
-    {
-      "name": "цена",
-      "type": "number",
-      "flexberryType": "int",
-      "notNull": false,
-      "defaultValue": "",
-      "stored": true,
-      "ordered": false
     }
   ],
   "belongsTo": [
@@ -76,18 +67,6 @@
           "caption": "Сумма",
           "hidden": false,
           "index": 1
-        },
-        {
-          "name": "название",
-          "caption": "Название",
-          "hidden": false,
-          "index": 2
-        },
-        {
-          "name": "цена",
-          "caption": "Цена",
-          "hidden": false,
-          "index": 3
         }
       ],
       "belongsTo": [
@@ -102,10 +81,16 @@
               "name": "название",
               "caption": "Название",
               "hidden": true,
-              "index": 5
+              "index": 3
+            },
+            {
+              "name": "цена",
+              "caption": "",
+              "hidden": false,
+              "index": 4
             }
           ],
-          "index": 4,
+          "index": 2,
           "type": "standard",
           "caption": "Товар",
           "name": "товар",

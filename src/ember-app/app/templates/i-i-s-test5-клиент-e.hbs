@@ -37,16 +37,6 @@
   <div class="field">
     {{flexberry-field
       readonly=readonly
-      value=model.отчество
-      class=(if (v-get validationModel "отчество" "isInvalid") "error")
-      label=(t "forms.i-i-s-test5-клиент-e.отчество-caption")
-      data-test-i-i-s-test5-клиент-e-отчество=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "отчество" "message")}}
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=readonly
       value=model.фамилия
       class=(if (v-get validationModel "фамилия" "isInvalid") "error")
       label=(t "forms.i-i-s-test5-клиент-e.фамилия-caption")
@@ -67,11 +57,11 @@
   <div class="field">
     {{flexberry-field
       readonly=readonly
-      value=model.кодК
-      class=(if (v-get validationModel "кодК" "isInvalid") "error")
-      label=(t "forms.i-i-s-test5-клиент-e.кодК-caption")
-      data-test-i-i-s-test5-клиент-e-кодК=true
+      value=model.отчество
+      class=(if (v-get validationModel "отчество" "isInvalid") "error")
+      label=(t "forms.i-i-s-test5-клиент-e.отчество-caption")
+      data-test-i-i-s-test5-клиент-e-отчество=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "кодК" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "отчество" "message")}}
   </div>
 </form>

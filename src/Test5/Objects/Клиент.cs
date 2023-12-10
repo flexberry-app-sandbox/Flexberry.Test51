@@ -30,16 +30,14 @@ namespace IIS.Test5
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("КлиентE", new string[] {
             "Номер as \'Номер\'",
-            "Отчество as \'Отчество\'",
-            "Фамилия as \'Фамилия\'",
-            "Имя as \'Имя\'",
-            "КодК as \'Код К\'"})]
+            "Фамилия",
+            "Имя",
+            "Отчество"})]
     [View("КлиентL", new string[] {
             "Номер as \'Номер\'",
-            "Отчество as \'Отчество\'",
             "Фамилия as \'Фамилия\'",
             "Имя as \'Имя\'",
-            "КодК as \'Код К\'"})]
+            "Отчество"})]
     public class Клиент : ICSSoft.STORMNET.DataObject
     {
         
@@ -50,8 +48,6 @@ namespace IIS.Test5
         private string fФамилия;
         
         private string fИмя;
-        
-        private int fКодК;
         
         // *** Start programmer edit section *** (Клиент CustomMembers)
 
@@ -87,37 +83,6 @@ namespace IIS.Test5
                 // *** Start programmer edit section *** (Клиент.Имя Set end)
 
                 // *** End programmer edit section *** (Клиент.Имя Set end)
-            }
-        }
-        
-        /// <summary>
-        /// КодК.
-        /// </summary>
-        // *** Start programmer edit section *** (Клиент.КодК CustomAttributes)
-
-        // *** End programmer edit section *** (Клиент.КодК CustomAttributes)
-        public virtual int КодК
-        {
-            get
-            {
-                // *** Start programmer edit section *** (Клиент.КодК Get start)
-
-                // *** End programmer edit section *** (Клиент.КодК Get start)
-                int result = this.fКодК;
-                // *** Start programmer edit section *** (Клиент.КодК Get end)
-
-                // *** End programmer edit section *** (Клиент.КодК Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (Клиент.КодК Set start)
-
-                // *** End programmer edit section *** (Клиент.КодК Set start)
-                this.fКодК = value;
-                // *** Start programmer edit section *** (Клиент.КодК Set end)
-
-                // *** End programmer edit section *** (Клиент.КодК Set end)
             }
         }
         

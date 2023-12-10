@@ -68,20 +68,20 @@
       "modelName": "i-i-s-test5-товар",
       "attrs": [
         {
-          "name": "цена",
-          "caption": "Цена",
+          "name": "кодТ",
+          "caption": "Код Т",
           "hidden": false,
           "index": 0
         },
         {
-          "name": "кодТ",
-          "caption": "Код Т",
+          "name": "название",
+          "caption": "Название",
           "hidden": false,
           "index": 1
         },
         {
-          "name": "название",
-          "caption": "Название",
+          "name": "цена",
+          "caption": "",
           "hidden": false,
           "index": 2
         }

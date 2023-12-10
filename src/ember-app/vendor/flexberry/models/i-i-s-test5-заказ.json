@@ -83,57 +83,49 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": "Отчество",
-          "lookupValueField": "отчество",
-          "relationName": "Сотрудник",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "отчество",
-              "caption": "Отчество",
-              "hidden": true,
-              "index": 4
-            }
-          ],
-          "index": 3,
-          "type": "standard",
-          "caption": "Сотрудник",
-          "name": "сотрудник",
-          "relatedTo": "i-i-s-test5-сотрудник",
-          "inverse": null
-        },
-        {
-          "lookupValue": "Отчество",
-          "lookupValueField": "отчество",
+          "lookupValue": null,
+          "lookupValueField": null,
           "relationName": "Клиент",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
-              "name": "отчество",
-              "caption": "Отчество",
-              "hidden": true,
+              "name": "номер",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "",
+          "name": "клиент",
+          "relatedTo": "i-i-s-test5-клиент",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "табНом",
+              "caption": "",
+              "hidden": false,
               "index": 6
             }
           ],
           "index": 5,
-          "type": "standard",
-          "caption": "Клиент",
-          "name": "клиент",
-          "relatedTo": "i-i-s-test5-клиент",
+          "type": "default",
+          "caption": "",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-test5-сотрудник",
           "inverse": null
         }
       ],
-      "hasMany": [
-        {
-          "projectionName": "СтрокаЗаказаE",
-          "caption": "Строка заказа",
-          "name": "строкаЗаказа",
-          "relatedTo": "i-i-s-test5-строка-заказа",
-          "inverse": null
-        }
-      ]
+      "hasMany": []
     },
     {
       "name": "ЗаказL",
@@ -162,27 +154,6 @@
         {
           "lookupValue": null,
           "lookupValueField": null,
-          "relationName": "Клиент",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "кодК",
-              "caption": "",
-              "hidden": false,
-              "index": 3
-            }
-          ],
-          "index": -1,
-          "type": "default",
-          "caption": "",
-          "name": "клиент",
-          "relatedTo": "i-i-s-test5-клиент",
-          "inverse": null
-        },
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
           "relationName": "Сотрудник",
           "belongsTo": [],
           "hidden": false,
@@ -191,7 +162,7 @@
               "name": "табНом",
               "caption": "",
               "hidden": false,
-              "index": 4
+              "index": 3
             }
           ],
           "index": -1,
@@ -199,6 +170,27 @@
           "caption": "",
           "name": "сотрудник",
           "relatedTo": "i-i-s-test5-сотрудник",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номер",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "клиент",
+          "relatedTo": "i-i-s-test5-клиент",
           "inverse": null
         }
       ],

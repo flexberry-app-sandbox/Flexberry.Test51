@@ -33,9 +33,9 @@ namespace IIS.Test5
             "КодТ as \'Код Т\'",
             "Название as \'Название\'"})]
     [View("ТоварL", new string[] {
-            "Цена as \'Цена\'",
             "КодТ as \'Код Т\'",
-            "Название as \'Название\'"})]
+            "Название as \'Название\'",
+            "Цена"})]
     public class Товар : ICSSoft.STORMNET.DataObject
     {
         

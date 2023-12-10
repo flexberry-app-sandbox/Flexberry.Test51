@@ -61,32 +61,23 @@ export let defineProjections = function (modelClass) {
     статус: attr('Статус', { index: 0 }),
     цена: attr('Цена', { index: 1 }),
     дата: attr('Дата', { index: 2 }),
-    сотрудник: belongsTo('i-i-s-test5-сотрудник', 'Сотрудник', {
-      отчество: attr('Отчество', { index: 4, hidden: true })
-    }, { index: 3, displayMemberPath: 'отчество' }),
-    клиент: belongsTo('i-i-s-test5-клиент', 'Клиент', {
-      отчество: attr('Отчество', { index: 6, hidden: true })
-    }, { index: 5, displayMemberPath: 'отчество' }),
-    строкаЗаказа: hasMany('i-i-s-test5-строка-заказа', 'Строка заказа', {
-      количество: attr('Количество', { index: 0 }),
-      сумма: attr('Сумма', { index: 1 }),
-      название: attr('Название', { index: 2 }),
-      цена: attr('Цена', { index: 3 }),
-      товар: belongsTo('i-i-s-test5-товар', 'Товар', {
-        название: attr('Название', { index: 5, hidden: true })
-      }, { index: 4, displayMemberPath: 'название' })
-    })
+    клиент: belongsTo('i-i-s-test5-клиент', '', {
+      номер: attr('', { index: 4 })
+    }, { index: 3 }),
+    сотрудник: belongsTo('i-i-s-test5-сотрудник', '', {
+      табНом: attr('', { index: 6 })
+    }, { index: 5 })
   });
 
   modelClass.defineProjection('ЗаказL', 'i-i-s-test5-заказ', {
     статус: attr('Статус', { index: 0 }),
     цена: attr('Цена', { index: 1 }),
     дата: attr('Дата', { index: 2 }),
-    клиент: belongsTo('i-i-s-test5-клиент', '', {
-      кодК: attr('', { index: 3 })
-    }, { index: -1, hidden: true }),
     сотрудник: belongsTo('i-i-s-test5-сотрудник', '', {
-      табНом: attr('', { index: 4 })
+      табНом: attr('', { index: 3 })
+    }, { index: -1, hidden: true }),
+    клиент: belongsTo('i-i-s-test5-клиент', '', {
+      номер: attr('', { index: 4 })
     }, { index: -1, hidden: true })
   });
 };

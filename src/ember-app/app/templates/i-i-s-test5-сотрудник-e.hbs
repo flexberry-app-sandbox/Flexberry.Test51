@@ -27,22 +27,12 @@
   <div class="field">
     {{flexberry-field
       readonly=readonly
-      value=model.отчество
-      class=(if (v-get validationModel "отчество" "isInvalid") "error")
-      label=(t "forms.i-i-s-test5-сотрудник-e.отчество-caption")
-      data-test-i-i-s-test5-сотрудник-e-отчество=true
+      value=model.табНом
+      class=(if (v-get validationModel "табНом" "isInvalid") "error")
+      label=(t "forms.i-i-s-test5-сотрудник-e.табНом-caption")
+      data-test-i-i-s-test5-сотрудник-e-табНом=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "отчество" "message")}}
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=readonly
-      value=model.имя
-      class=(if (v-get validationModel "имя" "isInvalid") "error")
-      label=(t "forms.i-i-s-test5-сотрудник-e.имя-caption")
-      data-test-i-i-s-test5-сотрудник-e-имя=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "имя" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "табНом" "message")}}
   </div>
   <div class="field">
     {{flexberry-field
@@ -57,11 +47,21 @@
   <div class="field">
     {{flexberry-field
       readonly=readonly
-      value=model.табНом
-      class=(if (v-get validationModel "табНом" "isInvalid") "error")
-      label=(t "forms.i-i-s-test5-сотрудник-e.табНом-caption")
-      data-test-i-i-s-test5-сотрудник-e-табНом=true
+      value=model.имя
+      class=(if (v-get validationModel "имя" "isInvalid") "error")
+      label=(t "forms.i-i-s-test5-сотрудник-e.имя-caption")
+      data-test-i-i-s-test5-сотрудник-e-имя=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "табНом" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "имя" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.отчество
+      class=(if (v-get validationModel "отчество" "isInvalid") "error")
+      label=(t "forms.i-i-s-test5-сотрудник-e.отчество-caption")
+      data-test-i-i-s-test5-сотрудник-e-отчество=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "отчество" "message")}}
   </div>
 </form>

@@ -1,0 +1,1 @@
+docker-compose -p test5-java up -d

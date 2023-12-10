@@ -41,16 +41,16 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('СотрудникE', 'i-i-s-test5-сотрудник', {
-    отчество: attr('Отчество', { index: 0 }),
-    имя: attr('Имя', { index: 1 }),
-    фамилия: attr('Фамилия', { index: 2 }),
-    табНом: attr('Таб ном', { index: 3 })
+    табНом: attr('', { index: 0 }),
+    фамилия: attr('', { index: 1 }),
+    имя: attr('', { index: 2 }),
+    отчество: attr('', { index: 3 })
   });
 
   modelClass.defineProjection('СотрудникL', 'i-i-s-test5-сотрудник', {
-    отчество: attr('Отчество', { index: 0 }),
-    имя: attr('Имя', { index: 1 }),
-    фамилия: attr('Фамилия', { index: 2 }),
-    табНом: attr('Таб ном', { index: 3 })
+    табНом: attr('', { index: 0 }),
+    фамилия: attr('', { index: 1 }),
+    имя: attr('', { index: 2 }),
+    отчество: attr('', { index: 3 })
   });
 };

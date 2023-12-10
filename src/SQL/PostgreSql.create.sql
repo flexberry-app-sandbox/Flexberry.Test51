@@ -6,9 +6,8 @@
 CREATE TABLE СтрокаЗаказа (
  primaryKey UUID NOT NULL,
  Количество INT NULL,
- Сумма DOUBLE PRECISION NULL,
  Название VARCHAR(255) NULL,
- Цена INT NULL,
+ Сумма DOUBLE PRECISION NULL,
  Товар UUID NOT NULL,
  Заказ UUID NOT NULL,
  PRIMARY KEY (primaryKey));
@@ -16,38 +15,37 @@ CREATE TABLE СтрокаЗаказа (
 
 CREATE TABLE Товар (
  primaryKey UUID NOT NULL,
- Цена DOUBLE PRECISION NULL,
  КодТ INT NOT NULL,
  Название VARCHAR(255) NULL,
+ Цена DOUBLE PRECISION NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE Сотрудник (
  primaryKey UUID NOT NULL,
- Отчество VARCHAR(255) NULL,
  Имя VARCHAR(255) NULL,
- Фамилия VARCHAR(255) NULL,
+ Отчество VARCHAR(255) NULL,
  ТабНом INT NULL,
+ Фамилия VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE Заказ (
  primaryKey UUID NOT NULL,
+ Дата TIMESTAMP(3) NULL,
  Статус VARCHAR(8) NULL,
  Цена VARCHAR(255) NULL,
- Дата TIMESTAMP(3) NULL,
- Сотрудник UUID NOT NULL,
  Клиент UUID NOT NULL,
+ Сотрудник UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE Клиент (
  primaryKey UUID NOT NULL,
+ Имя VARCHAR(255) NULL,
  Номер INT NULL,
  Отчество VARCHAR(255) NULL,
  Фамилия VARCHAR(255) NULL,
- Имя VARCHAR(255) NULL,
- КодК INT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -161,11 +159,11 @@ CREATE INDEX Index4581f071da05dbf84de630a817cf11ce019481fa on СтрокаЗак
  ALTER TABLE СтрокаЗаказа ADD CONSTRAINT FK60ca6c2aec1cf64e9da289fe444bd695f79792d1 FOREIGN KEY (Заказ) REFERENCES Заказ; 
 CREATE INDEX Index60ca6c2aec1cf64e9da289fe444bd695f79792d1 on СтрокаЗаказа (Заказ); 
 
- ALTER TABLE Заказ ADD CONSTRAINT FK57e4c0dbcbc3ff7aab471a01fe0c325cfcc94c3c FOREIGN KEY (Сотрудник) REFERENCES Сотрудник; 
-CREATE INDEX Index57e4c0dbcbc3ff7aab471a01fe0c325cfcc94c3c on Заказ (Сотрудник); 
-
  ALTER TABLE Заказ ADD CONSTRAINT FKb1de9d7f17d94a5381356ad4cd11b00b038062c9 FOREIGN KEY (Клиент) REFERENCES Клиент; 
 CREATE INDEX Indexb1de9d7f17d94a5381356ad4cd11b00b038062c9 on Заказ (Клиент); 
+
+ ALTER TABLE Заказ ADD CONSTRAINT FK57e4c0dbcbc3ff7aab471a01fe0c325cfcc94c3c FOREIGN KEY (Сотрудник) REFERENCES Сотрудник; 
+CREATE INDEX Index57e4c0dbcbc3ff7aab471a01fe0c325cfcc94c3c on Заказ (Сотрудник); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

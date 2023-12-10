@@ -51,26 +51,26 @@
       "modelName": "i-i-s-test5-сотрудник",
       "attrs": [
         {
-          "name": "отчество",
-          "caption": "Отчество",
+          "name": "табНом",
+          "caption": "",
           "hidden": false,
           "index": 0
         },
         {
-          "name": "имя",
-          "caption": "Имя",
+          "name": "фамилия",
+          "caption": "",
           "hidden": false,
           "index": 1
         },
         {
-          "name": "фамилия",
-          "caption": "Фамилия",
+          "name": "имя",
+          "caption": "",
           "hidden": false,
           "index": 2
         },
         {
-          "name": "табНом",
-          "caption": "Таб ном",
+          "name": "отчество",
+          "caption": "",
           "hidden": false,
           "index": 3
         }
@@ -83,26 +83,26 @@
       "modelName": "i-i-s-test5-сотрудник",
       "attrs": [
         {
-          "name": "отчество",
-          "caption": "Отчество",
+          "name": "табНом",
+          "caption": "",
           "hidden": false,
           "index": 0
         },
         {
-          "name": "имя",
-          "caption": "Имя",
+          "name": "фамилия",
+          "caption": "",
           "hidden": false,
           "index": 1
         },
         {
-          "name": "фамилия",
-          "caption": "Фамилия",
+          "name": "имя",
+          "caption": "",
           "hidden": false,
           "index": 2
         },
         {
-          "name": "табНом",
-          "caption": "Таб ном",
+          "name": "отчество",
+          "caption": "",
           "hidden": false,
           "index": 3
         }

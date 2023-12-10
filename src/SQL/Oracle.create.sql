@@ -13,8 +13,6 @@ CREATE TABLE "СтрокаЗаказа"
 
 	"Название" NVARCHAR2(255) NULL,
 
-	"Цена" NUMBER(10) NULL,
-
 	"Товар" RAW(16) NOT NULL,
 
 	"Заказ" RAW(16) NOT NULL,
@@ -86,8 +84,6 @@ CREATE TABLE "Клиент"
 	"Фамилия" NVARCHAR2(255) NULL,
 
 	"Имя" NVARCHAR2(255) NULL,
-
-	"КодК" NUMBER(10) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;

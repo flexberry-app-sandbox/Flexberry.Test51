@@ -29,15 +29,15 @@ namespace IIS.Test5
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СотрудникE", new string[] {
-            "Отчество as \'Отчество\'",
-            "Имя as \'Имя\'",
-            "Фамилия as \'Фамилия\'",
-            "ТабНом as \'Таб ном\'"})]
+            "ТабНом",
+            "Фамилия",
+            "Имя",
+            "Отчество"})]
     [View("СотрудникL", new string[] {
-            "Отчество as \'Отчество\'",
-            "Имя as \'Имя\'",
-            "Фамилия as \'Фамилия\'",
-            "ТабНом as \'Таб ном\'"})]
+            "ТабНом",
+            "Фамилия",
+            "Имя",
+            "Отчество"})]
     public class Сотрудник : ICSSoft.STORMNET.DataObject
     {
         

@@ -32,22 +32,16 @@ namespace IIS.Test5
             "Статус as \'Статус\'",
             "Цена as \'Цена\'",
             "Дата as \'Дата\'",
-            "Сотрудник as \'Сотрудник\'",
-            "Сотрудник.Отчество as \'Отчество\'",
-            "Клиент as \'Клиент\'",
-            "Клиент.Отчество as \'Отчество\'"}, Hidden=new string[] {
-            "Сотрудник.Отчество",
-            "Клиент.Отчество"})]
-    [AssociatedDetailViewAttribute("ЗаказE", "СтрокаЗаказа", "СтрокаЗаказаE", true, "", "Строка заказа", true, new string[] {
-            ""})]
-    [MasterViewDefineAttribute("ЗаказE", "Сотрудник", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Отчество")]
-    [MasterViewDefineAttribute("ЗаказE", "Клиент", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Отчество")]
+            "Клиент",
+            "Клиент.Номер",
+            "Сотрудник",
+            "Сотрудник.ТабНом"})]
     [View("ЗаказL", new string[] {
             "Статус as \'Статус\'",
             "Цена as \'Цена\'",
             "Дата as \'Дата\'",
-            "Клиент.КодК",
-            "Сотрудник.ТабНом"})]
+            "Сотрудник.ТабНом",
+            "Клиент.Номер"})]
     public class Заказ : ICSSoft.STORMNET.DataObject
     {
         

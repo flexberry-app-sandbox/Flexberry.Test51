@@ -6,7 +6,6 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   имя: DS.attr('string'),
-  кодК: DS.attr('number'),
   номер: DS.attr('number'),
   отчество: DS.attr('string'),
   фамилия: DS.attr('string')
@@ -17,13 +16,6 @@ export let ValidationRules = {
     descriptionKey: 'models.i-i-s-test5-клиент.validations.имя.__caption__',
     validators: [
       validator('ds-error'),
-    ],
-  },
-  кодК: {
-    descriptionKey: 'models.i-i-s-test5-клиент.validations.кодК.__caption__',
-    validators: [
-      validator('ds-error'),
-      validator('number', { allowString: true, allowBlank: true, integer: true }),
     ],
   },
   номер: {
@@ -50,17 +42,15 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('КлиентE', 'i-i-s-test5-клиент', {
     номер: attr('Номер', { index: 0 }),
-    отчество: attr('Отчество', { index: 1 }),
-    фамилия: attr('Фамилия', { index: 2 }),
-    имя: attr('Имя', { index: 3 }),
-    кодК: attr('Код К', { index: 4 })
+    фамилия: attr('', { index: 1 }),
+    имя: attr('', { index: 2 }),
+    отчество: attr('', { index: 3 })
   });
 
   modelClass.defineProjection('КлиентL', 'i-i-s-test5-клиент', {
     номер: attr('Номер', { index: 0 }),
-    отчество: attr('Отчество', { index: 1 }),
-    фамилия: attr('Фамилия', { index: 2 }),
-    имя: attr('Имя', { index: 3 }),
-    кодК: attr('Код К', { index: 4 })
+    фамилия: attr('Фамилия', { index: 1 }),
+    имя: attr('Имя', { index: 2 }),
+    отчество: attr('', { index: 3 })
   });
 };

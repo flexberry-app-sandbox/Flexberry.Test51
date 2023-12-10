@@ -32,10 +32,9 @@ namespace IIS.Test5
     [View("СтрокаЗаказаE", new string[] {
             "Количество as \'Количество\'",
             "Сумма as \'Сумма\'",
-            "Название as \'Название\'",
-            "Цена as \'Цена\'",
             "Товар as \'Товар\'",
-            "Товар.Название as \'Название\'"}, Hidden=new string[] {
+            "Товар.Название as \'Название\'",
+            "Товар.Цена"}, Hidden=new string[] {
             "Товар.Название"})]
     [MasterViewDefineAttribute("СтрокаЗаказаE", "Товар", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]
     public class СтрокаЗаказа : ICSSoft.STORMNET.DataObject
@@ -46,8 +45,6 @@ namespace IIS.Test5
         private double fСумма;
         
         private string fНазвание;
-        
-        private int fЦена;
         
         private IIS.Test5.Товар fТовар;
         
@@ -149,37 +146,6 @@ namespace IIS.Test5
                 // *** Start programmer edit section *** (СтрокаЗаказа.Сумма Set end)
 
                 // *** End programmer edit section *** (СтрокаЗаказа.Сумма Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Цена.
-        /// </summary>
-        // *** Start programmer edit section *** (СтрокаЗаказа.Цена CustomAttributes)
-
-        // *** End programmer edit section *** (СтрокаЗаказа.Цена CustomAttributes)
-        public virtual int Цена
-        {
-            get
-            {
-                // *** Start programmer edit section *** (СтрокаЗаказа.Цена Get start)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Цена Get start)
-                int result = this.fЦена;
-                // *** Start programmer edit section *** (СтрокаЗаказа.Цена Get end)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Цена Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (СтрокаЗаказа.Цена Set start)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Цена Set start)
-                this.fЦена = value;
-                // *** Start programmer edit section *** (СтрокаЗаказа.Цена Set end)
-
-                // *** End programmer edit section *** (СтрокаЗаказа.Цена Set end)
             }
         }
         

@@ -56,31 +56,11 @@
     {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
   </div>
   <div class="field">
-    <label>{{t "forms.i-i-s-test5-заказ-e.сотрудник-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.сотрудник
-      displayAttributeName="отчество"
-      autocomplete=true
-      relationName="сотрудник"
-      projection="СотрудникL"
-      title=(t "forms.i-i-s-test5-заказ-e.сотрудник-caption")
-      readonly=readonly
-      componentName="сотрудникLookup"
-      class=(if (v-get validationModel "сотрудник" "isInvalid") "error")
-      data-test-i-i-s-test5-заказ-e-сотрудник=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "сотрудник" "message")}}
-  </div>
-  <div class="field">
     <label>{{t "forms.i-i-s-test5-заказ-e.клиент-caption"}}</label>
     {{flexberry-lookup
       choose="showLookupDialog"
       remove="removeLookupValue"
       value=model.клиент
-      displayAttributeName="отчество"
-      autocomplete=true
       relationName="клиент"
       projection="КлиентL"
       title=(t "forms.i-i-s-test5-заказ-e.клиент-caption")
@@ -92,17 +72,39 @@
     {{flexberry-validationmessage error=(v-get validationModel "клиент" "message")}}
   </div>
   <div class="field">
-    <label>{{t "forms.i-i-s-test5-заказ-e.строкаЗаказа-caption"}}</label>
-    {{flexberry-groupedit
-      componentName="строкаЗаказаGroupEdit"
-      mainModelProjection=modelProjection
-      modelProjection=modelProjection.attributes.строкаЗаказа
-      content=model.строкаЗаказа
-      readonly=readonly
-      orderable=false
-      class=(if (v-get validationModel "строкаЗаказа" "isInvalid") "error")
-      data-test-i-i-s-test5-заказ-e-строкаЗаказа=true
+    {{flexberry-field
+      readonly=true
+      value=model.клиент.номер
+      class=(if (v-get validationModel.клиент "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-test5-заказ-e.клиент.номер-caption")
+      data-test-i-i-s-test5-заказ-e-клиент-номер=true
     }}
-    {{flexberry-validationmessage error=(v-get validationModel "строкаЗаказа" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel.клиент "номер" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-test5-заказ-e.сотрудник-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудник
+      relationName="сотрудник"
+      projection="СотрудникL"
+      title=(t "forms.i-i-s-test5-заказ-e.сотрудник-caption")
+      readonly=readonly
+      componentName="сотрудникLookup"
+      class=(if (v-get validationModel "сотрудник" "isInvalid") "error")
+      data-test-i-i-s-test5-заказ-e-сотрудник=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудник" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.сотрудник.табНом
+      class=(if (v-get validationModel.сотрудник "табНом" "isInvalid") "error")
+      label=(t "forms.i-i-s-test5-заказ-e.сотрудник.табНом-caption")
+      data-test-i-i-s-test5-заказ-e-сотрудник-табНом=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.сотрудник "табНом" "message")}}
   </div>
 </form>
