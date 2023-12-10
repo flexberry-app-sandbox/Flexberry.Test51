@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Test5",
+  "applicationTitle": "Test5",
+  "items": [
+    {
+      "link": null,
+      "menuName": "test5",
+      "caption": "Test5",
+      "title": "Test5",
+      "children": [
+        {
+          "link": "i-i-s-test5-товар-l",
+          "menuName": null,
+          "caption": "Товар",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test5-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test5-заказ-l",
+          "menuName": null,
+          "caption": "Заказ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test5-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISTest5Товар",
+  "modelName": "i-i-s-test5-товар",
+  "className": "Товар",
+  "nameSpace": "IIS.Test5",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодТ",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "название",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТоварE",
+      "modelName": "i-i-s-test5-товар",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кодТ",
+          "caption": "Код Т",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТоварL",
+      "modelName": "i-i-s-test5-товар",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кодТ",
+          "caption": "Код Т",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
